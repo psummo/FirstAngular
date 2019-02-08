@@ -1,8 +1,14 @@
 <h1>Lista corsi</h1>
-
 <ul>
-  <li *ngFor="let course of coursesList" (click)="selectCourse(course)">
-    {{course.name}}
+  <li *ngFor="let course of coursesList" (click)="selectCourse(course)" style="list-style: none;">
+    <strong>{{course.id}})</strong> {{course.name}} <button (click)="deleteCourse(course)"
+                                         style='
+                                          border: 0px;
+                                         background-size: cover;
+                                         background-position: center;
+                                         background-image: url("https://cdn3.iconfinder.com/data/icons/musthave/256/Delete.png");
+                                         background-color: rgba(255,255,255,0);
+                                         width: 10px; height: 10px;'></button>
   </li>
 </ul>
 

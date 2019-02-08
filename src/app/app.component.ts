@@ -11,4 +11,9 @@ export class AppComponent {
   passCourse(course: Course) {
     this.courseImported = course;
   }
+  closeDetail(course: Course) {
+    if (course === this.courseImported) {
+       this.courseImported = null;
+    }
+  }
 }

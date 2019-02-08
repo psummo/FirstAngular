@@ -1,5 +1,6 @@
-<h2>Detail of "{{courseInput.name}}"</h2>
+<div style="float: left"><h3>Detail of "{{courseInput.name}}"</h3>
 <h5>Durata {{courseInput.days}} giorni</h5>
-<h5>Nome insegnante {{courseInput.prof}}</h5>
+<h5>Nome insegnante {{courseInput.prof}}</h5></div>
+<app-students [studentList]="courseStudents"></app-students>
 
 

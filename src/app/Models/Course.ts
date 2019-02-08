@@ -1,3 +1,4 @@
 export class Course {
-   constructor(public name: string, public days: number, public prof: string) {}
+  id: number;
+   constructor( public name: string, public days: number, public prof: string) {}
 }

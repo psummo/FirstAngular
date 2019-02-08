@@ -12,6 +12,8 @@ export class CoursesComponent implements OnInit {
   // EMITTER PER ANDARE FUORI DAL COMPONENT
   @Output()
   courseSelected = new EventEmitter<Course>();
+  @Output()
+    removeCourse = new EventEmitter<Course>();
   coursesList: Course[] = [];
   constructor(private coursesService: CoursesService) {
   }
@@ -23,5 +25,11 @@ export class CoursesComponent implements OnInit {
   // DA UN COMPONENT AD UN ALTRO
   selectCourse(course: Course) {
     this.courseSelected.emit(course);
+  }
+
+
+  deleteCourse(course: Course) {
+    this.coursesService.removeCourses(course);
+    this.removeCourse.emit(course);
   }
 }

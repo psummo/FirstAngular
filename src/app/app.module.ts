@@ -6,6 +6,8 @@ import { FirstComponent } from './first/first.component';
 import { CoursesComponent } from './courses/courses.component';
 import {CoursesService} from './courses.service';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
+import { CourseFormComponent } from './course-form/course-form.component';
+import { StudentsComponent } from './students/students.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { CourseDetailComponent } from './course-detail/course-detail.component';
     AppComponent,
     FirstComponent,
     CoursesComponent,
-    CourseDetailComponent
+    CourseDetailComponent,
+    CourseFormComponent,
+    StudentsComponent
   ],
   imports: [
     BrowserModule

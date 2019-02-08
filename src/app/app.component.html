@@ -1,3 +1,4 @@
-<app-courses (courseSelected)="passCourse($event)"></app-courses>
+<app-course-form></app-course-form>
+<app-courses (courseSelected)="passCourse($event)" (removeCourse)="closeDetail($event)"></app-courses>
 
 <app-course-detail *ngIf="courseImported" [courseInput]="courseImported" ></app-course-detail>

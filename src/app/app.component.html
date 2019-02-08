@@ -1,0 +1,3 @@
+<app-courses (courseSelected)="passCourse($event)"></app-courses>
+
+<app-course-detail *ngIf="courseImported" [courseInput]="courseImported" ></app-course-detail>

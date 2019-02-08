@@ -1,0 +1,8 @@
+<h1>Lista corsi</h1>
+
+<ul>
+  <li *ngFor="let course of coursesList" (click)="selectCourse(course)">
+    {{course.name}}
+  </li>
+</ul>
+

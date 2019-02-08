@@ -1,0 +1,14 @@
+<input #inputName [value] = "name" (input)= "setName(inputName.value)" />
+<h1>{{name}}</h1>
+<p>
+  first works!
+</p>
+
+<div *ngIf="name=='nome'">
+  <p>
+    Il nome è {{name}}
+  </p>
+</div>
+
+<p>Counter button
+<button (click)="incrementCounter()">Increment</button>{{counter}}</p>
